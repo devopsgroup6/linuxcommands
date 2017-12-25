@@ -1,0 +1,349 @@
+    1  ls -a
+    2  cd .ssh
+    3  ls -a
+    4  su ansible
+    5  exit
+    6  vi /etc/ansible/hosts
+    7  ansible demo --list-hosts
+    8  ansible all --list-hosts
+    9  ansible demo -m ping
+   10  ansible demo -a "ls"
+   11  cd .ssh
+   12  ansible demo -m ping
+   13  exit
+   14  ansible demo --list-hosts
+   15  ansible demo -s -m yum -a "pkg=httpd state=present"
+   16  ssh- keygen
+   17  ssh-keygen
+   18  ansible demo -m ping
+   19  cd .ssh
+   20  ansible demo -m ping
+   21  yum update
+   22  su ansible
+   23  exit
+   24  whoami
+   25  pwd
+   26  mkdir lol
+   27  ls -l
+   28  /lol
+   29  cd /lol
+   30  cd lol
+   31  vi /lol
+   32  clear
+   33  date
+   34  ls -l
+   35  cd ..
+   36  uname
+   37  man ls
+   38  clear
+   39  time
+   40  date
+   41  calendar
+   42  cal
+   43  touch 1file
+   44  rem 1file
+   45  rm 1file
+   46  vi 1file
+   47  clear
+   48  ls
+   49  rm 1file
+   50  ls
+   51  echo telenor
+   52  hostname
+   53  echo "line1">1file
+   54  vi 1file
+   55  echo "line2">>1file
+   56  cat 1file
+   57  /bin
+   58  cd /bin
+   59  cd ~
+   60  exit
+   61  cd bin
+   62  cd /bin
+   63  cd ..
+   64  cd /etc
+   65  cd /home
+   66  cd /user
+   67  whoami
+   68  who
+   69  cd var/log/messages
+   70  cd /var/log/messages
+   71  vi /var/log/messages
+   72  clear
+   73  ls
+   74  ls -lrt
+   75  man
+   76  man ls
+   77  clear
+   78  touch 1.file
+   79  ls
+   80  rm 1.file
+   81  ls
+   82  echo messages
+   83  ls
+   84  echo "line1">1.txt
+   85  ls
+   86  vi 1.txt
+   87  clear
+   88  ls
+   89  rm 1.txt
+   90  hostname
+   91  cd ~
+   92  exit
+   93  yum install netstats
+   94  clear
+   95  yum install -y yum-utils
+   96  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   97  yum -y install docker-ce
+   98  service start docker
+   99  systemctl start docker
+  100  systemctl status docker
+  101  which docker
+  102  docker info
+  103  docker run -it ubuntu
+  104  docker run -it ubuntu /bin/bash
+  105  docker run --name testcontainer -it ubuntu /bin/bash
+  106  docker start testcontainer
+  107  docker attach testcontainer
+  108  docker run --name daemontest -d ubuntu /bin/bash
+  109  docker logs -f daemontest
+  110  docker ps
+  111  docker ps -a
+  112  docker info
+  113  ls
+  114  ls -la
+  115  docker ps
+  116  docker ps -l
+  117  docker start daemontest
+  118  docker attach daemontest
+  119  docker start 89b7aae3812d
+  120  docker ps
+  121  docker ps -l
+  122  docker attach daemontest
+  123  docker ps -a
+  124  docker top daemontest
+  125  docker start daemontest
+  126  ps
+  127  docker ps
+  128  docker top daemontest
+  129  docker inspect daemontest
+  130  clear
+  131  docker inspect --format '{{ .networksettings.ipaddress}}' daemontest
+  132  docker inspect --format '{{ .networksettings.ipaddress }}' daemontest
+  133  docker inspect --format '{{ .NetworkSettings.IPAddress }}' daemontest
+  134  docker inspect --format '{{ .State.Running }}' daemontest
+  135  docker exec daemontest
+  136  docker exec daemontest hostname
+  137  docker stats daemontest
+  138  docker start -it daemontest
+  139  docker start -t daemontest
+  140  docker start daemontest
+  141  docker ps
+  142  docker ps -a
+  143  docker events
+  144  clear
+  145  docker run -d -p 80:80 nginx:latest
+  146  docker run  -p 80:80 nginx:latest
+  147  docker run -d -p 80:80 nginx:latest
+  148  docker run --name voltest -it -v /usr/data ubuntu /bin/bash
+  149  docker run -it --volumes-from voltest --privileged=true ubuntu /bin/bash
+  150  docker start voltest
+  151  docker attach voltest
+  152  docker ps
+  153  docker ps -a
+  154  docker start daemontest
+  155  docker attach daemontest
+  156  cd user/home
+  157  cd user
+  158  cd usr
+  159  cd temp
+  160  cd \temp
+  161  clear
+  162  mkdir dockerfile
+  163  cd dockerfile
+  164  touch dockertest
+  165  ls
+  166  vim dockertest
+  167  vi dockertest
+  168  ls
+  169  docker build -t myimg02 .
+  170  docker build -t myimg02 dockertest
+  171  docker build -t myimg02 .
+  172  exit
+  173  docker build -t myimg02 .
+  174  cd dockerfile
+  175  docker build -t myimg02 .
+  176  cat dockertest
+  177  vi dockertest
+  178  docker build -t myimg02 .
+  179  cd dockertest
+  180  cd dockerfile
+  181  docker build -t myimg02
+  182  docker build -t myimg02 .
+  183  cd root
+  184  cd dockerfile
+  185  exit
+  186  ls
+  187  vim 1.py
+  188  ls -l
+  189  cal
+  190  clear
+  191  cd bin
+  192  cd /bin
+  193  cd . .
+  194  cd ..
+  195  cd /etc
+  196  cd ..
+  197  cd..
+  198  cd ..
+  199  vim /var/log/messages
+  200  whoami
+  201  who
+  202  pwd
+  203  cd /bin
+  204  pwd
+  205  cd ..
+  206  man
+  207  ls -lart
+  208  time
+  209  ls -lrt
+  210  ls
+  211  cd ..
+  212  ls
+  213  ls -l
+  214  clear
+  215  rm
+  216  clear
+  217  cd /bin
+  218  ls
+  219  clear
+  220  cd ..
+  221  vim 1.py
+  222  ls -lrt|sort
+  223  vim fibonacci.sh
+  224  python fibonacci.sh
+  225  ls 
+  226  python 1.py
+  227  find line 1.txt
+  228  find -line 1.txt
+  229  find 1.txt 
+  230  ls
+  231  cd /bin
+  232  cd ..
+  233  cd ~
+  234  ls
+  235  vim second.yl
+  236  rm second.yl
+  237  ls
+  238  vim 1.txt
+  239  vim third
+  240  echo "test.yml"
+  241  echo "linescrambled">1.txt
+  242  vim 1.txt
+  243  cat 1.txt
+  244  echo "line1"> 1.txt
+  245  cat 1.txt
+  246  echo "line2">> 1.txt
+  247  cat 1.txt
+  248  vim 1.txt
+  249  hostname
+  250  hostname -i
+  251  hostname -I
+  252  chown 1.txt
+  253  chown -r 1.txt
+  254  chown +x 1.txt
+  255  chown root 1.txt
+  256  add user testguy
+  257  adduser testguy
+  258  passwd testguy
+  259  su testguy
+  260  cat 1.txt
+  261  chmod -r 1.txt
+  262  chmod +r 1.txt
+  263  ls -l
+  264  yum install firefox
+  265  yum update
+  266  yum update mysql
+  267  yum list openssh
+  268  yum search firefox
+  269  yum info firefox
+  270  history
+  271  vimrc
+  272  ls
+  273  vim 1.txt
+  274  uptime
+  275  vim 1.txt
+  276  ls -lrt
+  277  ln -s
+  278  chmod +w 1.txt
+  279  ls
+  280  ls -lrt
+  281  rm testguy
+  282  vim 1.txt
+  283  chmod +g +w
+  284  chmod +u
+  285  chmod --help
+  286  clear
+  287  less 1.txt'
+  288  less 1.txt
+  289  more 1.txt
+  290  less 1.txt
+  291  touch 2.txt
+  292  cp 1.txt 2.txt
+  293  cat 2.txt
+  294  mv 2.txt 1.txt
+  295  cat 1.txt
+  296  cat 2.txt
+  297  vim 2.txt
+  298  rm -rf
+  299  grep line 1 1.txt
+  300  grep line 1.txt
+  301  echo thisisaveryhugeonelol
+  302  diff 1.txt 2.txt
+  303  $0
+  304  cat 1.txt
+  305  chown testguy 1.txt
+  306  su testguy
+  307  file /bin/passwd
+  308  file /home
+  309  head etc/passwd
+  310  head /etc/passwd
+  311  ls
+  312  vim 1.py
+  313  tail /etc/passwd
+  314  tail -n 3 /etc/passwd
+  315  wc /etc/passwd
+  316  wc -l /etc/passwd
+  317  wc -c /etc/passwd
+  318  ls /etc/passwd
+  319  mkdir lol
+  320  ls
+  321  vim 1.py
+  322  ls
+  323  history
+  324  history >> Linux history.txt
+  325  history >> linuxhistory.txt
+  326  vim linuxhistory.txt
+  327  cd .git
+  328  ls
+  329  cd linuxcommands
+  330  ls
+  331  cd .git
+  332  ls
+  333  git clone https://github.com/devopsgroup6/linuxcommands.git
+  334  rmdir linuxcommands
+  335  ls
+  336  cd linuxcommands
+  337  ls
+  338  rm 1.txt
+  339  rm gitest
+  340  ls
+  341  cd .git
+  342  rmdir linuxcommands
+  343  ls
+  344  git clone https://github.com/devopsgroup6/linuxcommands.git
+  345  ls
+  346  cd linuxcommands
+  347  ls
+  348  history
+  349  history >> linuxcommandshistory
