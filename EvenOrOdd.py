@@ -5,11 +5,11 @@
 #########################################################################################
 
 #!/usr/bin/python
-
+num= int(input("PLEASE ENTER THE INPUT NUMBER:"))
 def Even_Odd(num):
   if((num%2)==0):
     print("The given number is even:",num)
   else:
     print("The given number is odd:",num)
-Even_Odd(10)
+Even_Odd(num)
 
